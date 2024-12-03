@@ -1,0 +1,15 @@
+TRANSMISSION_LINE,PERIOD,trans_lz1,trans_lz2,trans_dbid,trans_length_km,trans_efficiency,trans_derating_factor,TxCapacityNameplate,TxCapacityNameplateAvailable,TotalAnnualCost
+Antioquia-Caribe,2023,Antioquia,Caribe,Antioquia-Caribe,331.18,0.96,1,1211.3123706487684,1211.3123706487684,48176125.62715904
+Antioquia-Caribe,2024,Antioquia,Caribe,Antioquia-Caribe,331.18,0.96,1,1458.9531415657948,1458.9531415657948,58025255.52889972
+Antioquia-Nordeste,2023,Antioquia,Nordeste,Antioquia-Nordeste,329.95,0.96,1,845.000000002917,845.000000002917,33482390.560237873
+Antioquia-Nordeste,2024,Antioquia,Nordeste,Antioquia-Nordeste,329.95,0.96,1,845.0000000042073,845.0000000042073,33482390.560289003
+Antioquia-Oriental,2023,Antioquia,Oriental,Antioquia-Oriental,568.98,0.96,1,480.00000000188186,480.00000000188186,32798188.281592157
+Antioquia-Oriental,2024,Antioquia,Oriental,Antioquia-Oriental,568.98,0.96,1,480.00000000313435,480.00000000313435,32798188.281677738
+Antioquia-Surocciden,2023,Antioquia,Surocciden,Antioquia-Surocciden,552.69,0.96,1,1420.0000000034272,1420.0000000034272,94250045.28382188
+Antioquia-Surocciden,2024,Antioquia,Surocciden,Antioquia-Surocciden,552.69,0.96,1,1420.0000000043326,1420.0000000043326,94250045.28388198
+Caribe-Nordeste,2023,Caribe,Nordeste,Caribe-Nordeste,358.09,0.96,1,500.0000000029059,500.0000000029059,21501750.284459226
+Caribe-Nordeste,2024,Caribe,Nordeste,Caribe-Nordeste,358.09,0.96,1,500.00000000540257,500.00000000540257,21501750.284566592
+Nordeste-Oriental,2023,Nordeste,Oriental,Nordeste-Oriental,367.95,0.96,1,882.5000000029158,882.5000000029158,38995557.863286704
+Nordeste-Oriental,2024,Nordeste,Oriental,Nordeste-Oriental,367.95,0.96,1,882.500000004227,882.500000004227,38995557.86334464
+Oriental-Surocciden,2023,Oriental,Surocciden,Oriental-Surocciden,322.09,0.96,1,882.5000000028676,882.5000000028676,34135288.03420391
+Oriental-Surocciden,2024,Oriental,Surocciden,Oriental-Surocciden,322.09,0.96,1,882.5000000041779,882.5000000041779,34135288.03425459
