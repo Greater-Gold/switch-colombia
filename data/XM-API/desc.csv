@@ -1,0 +1,188 @@
+MetricId,MetricUnits,MetricDescription
+DemaReal,kWh,Demanda de usuarios regulados y no regulados que hacen parte del Sistema Interconectado Nacional (no incluye Alumbrado Público)
+DemaReal,kWh,Demanda de usuarios regulados y no regulados que hacen parte del Sistema Interconectado Nacional (no incluye Alumbrado Público)
+ExpoMoneda,COP,Transferencias de Energia desde Colombia hacia otros paises
+DemaCome,kWh,Considera la demanda propia de cada comercializador mas la paticipacion en la perdidas del STN y los consumos propios de los generadores.
+Gene,kWh,Generacion neta de cada una de las plantas Nacionales en sus puntos de frontera.
+GeneIdea,kWh,Despacho de generacion que resulta de considerar una red de transporte inexistente
+PrecBolsNaci,COP/kWh,"Precio de oferta de la última planta flexible para atender la demanda comercial nacional, más delta de incremento para remunerar los costos no cubiertos de las plantas térmicas en el despacho ideal."
+RestAliv,COP,"“Es el valor a cargo de los comercializadores por concepto de restricciones después de aplicar los alivios definidos en la regulación vigente”, la regla de negocio de esta métrica sería la Resolución "
+ConsCombustibleMBTU,MBTU,Los generadores térmicos deben reportar diariamente según resolución CREG 084 de 2005 el consumo de combustible en MBTU
+Gene,kWh,Generacion neta de cada una de las plantas Nacionales en sus puntos de frontera.
+IndRecMargina,#,"Si Precio de Oferta Declarado = Máximo Precio de Oferta Nacional (para el recurso que esto se cumpla, es el recurso que margina)"
+DemaCome,kWh,Considera la demanda propia de cada comercializador mas la paticipacion en la perdidas del STN y los consumos propios de los generadores.
+PrecOferDesp,COP/kWh,Es el precio de la energia de un recurso de generación despachados centralmente enviados por los agentes para el Despacho. Incluye el CEE
+MaxPrecOferNal,COP/kWh,Máximo precio de oferta nacional
+CompBolsNaciEner,kWh,Energía comprada en la Bolsa de Energía para atender la demanda nacional
+CompBolsNaciEner,kWh,Energía comprada en la Bolsa de Energía para atender la demanda nacional
+CompContEner,kWh,Energía comprada mediante Contratos de largo plazo
+CompContEner,kWh,Energía comprada mediante Contratos de largo plazo
+VentContEner,kWh,Energia vendida mediante Contratos de largo plazo
+VentContEner,kWh,Energia vendida mediante Contratos de largo plazo
+GeneIdea,kWh,Despacho de generacion que resulta de considerar una red de transporte inexistente
+ConsCombAprox,MBTU,La métrica se construye con el objetivo de determinar un valor aproximado para el consumo de combustible para los generadores térmicos que no deben reportar diariamente según resolución CREG 084 de 20
+EmisionesCO2,TonCO2,Emisiones totales de Dióxido de Carbono – CO2 de las plantas de generación registradas ante el CND. Incluye tanto las obtenidas con base en el reporte de consumo de combustible como las aproximadas po
+EmisionesCH4,TonCH4,"Emisiones totales de Dióxido de Carbono –CH4 de las plantas de generación registradas ante el CND, incluye tanto las obtenidas con base en el reporte de consumo de combustible como las aproximadas por"
+EmisionesN2O,TonN2O,"Emisiones totales de Dióxido de Carbono – N2O de las plantas de generación registradas ante el CND, incluye tanto las obtenidas con base en el reporte de consumo de combustible como las aproximadas po"
+EmisionesCO2Eq,gCO2e/kWh,Emisiones totales de Dióxido de Carbono. Para convertir las emisiones de CH4 y N2O se tomaron las sigueintes equivalencias 1 tonCH4= 21 tonCO2e y 1 tonN2O= 310 tonCO2e
+factorEmisionCO2e,gCO2e/kWh,Factor de emision de CO2 equivalente. Corresponde al Margen de Operación Simple (OM) el cual se obtiene como el cociente entre la generación real Sistema y las emisiones de CO2. Para convertir las emi
+ImpoEner,kWh,Transferencias de Energia desde otros paises para abastecer la demanda nacional
+ImpoEner,kWh,Transferencias de Energia desde otros paises para abastecer la demanda nacional
+ImpoMoneda,COP,Transferencias de Energia desde otros paises para abastecer la demanda nacional
+ExpoEner,kWh,Transferencias de Energia desde Colombia hacia otros paises
+ExpoMoneda,COP,Transferencias de Energia desde Colombia hacia otros paises
+DemaOR,kWh,"Demanda real del OR sin referir al STN, excluyendo la demanda de los usuarios conectados directamente al STN. Es decir que no se consideran las perdidas existentes en el STN."
+PerdidasEner,kWh,"Cantidad de las inyecciones de energia al Sistema de Transmision Nacional (flujos de baja a alta tension), menos la cantidad de los flujos que salieron del Sistema (flujos de alta a baja tension)."
+GeneSeguridad,kWh,"Generación que se requiere para garantizar condiciones de seguridad y confiabilidad, en la operación del Sistema Interconectado Nacional (SIN). Esta generación es programada por el CND en el Despacho "
+GeneFueraMerito,kWh,"Generación forzada requerida para suplir las Restricciones del SIN, cuyo precio de oferta es superior al precio de bolsa."
+ExpoEner,kWh,Transferencias de Energia desde Colombia hacia otros paises
+GeneProgDesp,kWh,"Despacho de generacion esperado de las centrales, que resulta de considerar la red de transporte real"
+GeneProgRedesp,kWh,Generación programada del redespacho
+DispoReal,kW,"Disponibilidad promedio calculada a partir de la fecha de los eventos que modifican la disponibilidad de las unidades de generacion de los generadores, asi como de la disponibilidad reportada al Centr"
+DispoCome,kW,"Considera la declaración de disponibilidad de los generadores, modificada cuando se presentan cambios en las unidades de generación en operación real del Sistema"
+DispoDeclarada,kWh,"Máxima cantidad de potencia neta que un generador puede suministrar al sistema durante el intervalo de tiempo determinado para el despacho económico o el redespacho, reportada diariamente en la oferta"
+RecoPosEner,kWh,Es el valor de la compensacion positiva que se debe aplicar a los generadores para cada uno de sus recursos ofertados debido a las diferencias entre el despacho ideal y la generacion real. Este concep
+RecoNegEner,kWh,Costos asociados con generaciones desplazadas en el despacho real por Generaciones de Seguridad Fuera de Merito o por Redespachos (diferencia entre el despacho ideal y el real).Este concepto aplica de
+RespComerAGC,COP,Responsabilidad Comercial de cada agente generador frente al Servicio de Regulación Secundara de Frecuencia
+DesvEner,kWh,Es la cantidad de energía que se desvía una Central cuando incumple el programa de generación
+DesvMoneda,COP,Es la cantidad de energía que se desvía una Central cuando incumple el programa de generación
+RecoPosMoneda,COP,Es el valor de la compensacion positiva que se debe aplicar a los generadores para cada uno de sus recursos ofertados debido a las diferencias entre el despacho ideal y la generacion real. Este concep
+RecoNegMoneda,COP,Costos asociados con generaciones desplazadas en el despacho real por Generaciones de Seguridad Fuera de Merito o por Redespachos (diferencia entre el despacho ideal y el real).Este concepto aplica de
+ExcedenteAGPE,kWh,Compras Excedentes AGPE: Esta consulta está asociada con la energía que reportan los comercializadores integrados con los Operadores de Red como compras de excedentes a Autogeneradores a Pequeña Escal
+DemaComeReg,kWh,Considera la demanda propia de cada comercializador mas la paticipacion en la perdidas del STN y los consumos propios de los generadores.
+DemaComeNoReg,kWh,Considera la demanda propia de cada comercializador mas la paticipacion en la perdidas del STN y los consumos propios de los generadores.
+DemaComeReg,kWh,Considera la demanda propia de cada comercializador mas la paticipacion en la perdidas del STN y los consumos propios de los generadores.
+DemaComeNoReg,kWh,Considera la demanda propia de cada comercializador mas la paticipacion en la perdidas del STN y los consumos propios de los generadores.
+RestSinAliv,COP,Es el valor de la generacion de seguridad total del sistema asociada a restricciones por concepto de limitaciones en la capacidad de transporte en las redes del SIN.
+DemaComeNoReg,kWh,Considera la demanda propia de cada comercializador mas la paticipacion en la perdidas del STN y los consumos propios de los generadores.
+PrecPromContNoRegu,COP/kWh,[Sumatoria Valor Ventas Contrato cuando el Mercado Destino es No Regulado] / [Sumatoria Ventas Energía Contrato cuando el Mercado Destino es No Regulado]
+PrecPromContRegu,COP/kWh,[Sumatoria Valor Ventas Contrato cuando el Mercado Destino es Regulado] / [Sumatoria Ventas Energía Contrato cuando el Mercado Destino es Regulado]
+CompContEnerReg,kWh,Energía comprada mediante Contratos de largo plazo
+CompContEnerNoReg,kWh,Energía comprada mediante Contratos de largo plazo
+CompContEnerReg,kWh,Energía comprada mediante Contratos de largo plazo
+CompContEnerNoReg,kWh,Energía comprada mediante Contratos de largo plazo
+RentasCongestRestr,COP,"La Resolución CREG 060 de 2004 modifica la Resolución CREG 004 de 2003, estableciendo la asignación de las Rentas de Congestión a la demanda total, la cual es definida como la sumatoria de la demanda "
+EjecGarantRestr,COP,"Ejecución de Garantías (Res. CREG 071 de 2006):“Valor (horario, diario y mensual) a favor de los comercializadores por ejecución de garantías del Cargo por Confiabilidad”; la regla de negocio es la Re"
+SnTIEMerito,COP,Corresponde a los valores netos deficitarios o superavitarios resultantes del ajuste final de Transacciones Internacionales de Electricidad de acuerdo con lo definido en la Resolución 004 de 2003.
+SnTIEFueraMerito,COP,Corresponde a los valores netos deficitarios o superavitarios resultantes del ajuste final de Transacciones Internacionales de Electricidad de acuerdo con lo definido en la Resolución 004 de 2003.
+PrecBolsNaciTX1,COP/kWh,Promedio aritmético del precio de bolsa nacional de la versión TX1
+CompBolsaTIEEner,kWh,Energía comprada en la Bolsa de Energía para atender la demanda TIE
+CompBolsaIntEner,kWh,"Energía comprada en la Bolsa para atender la demanda internacional, es decir, las exportaciones a Venezuela. La interconexión con Venezuela se hace a través de las líneas Cuestecitas- Cuatricentenario"
+VentBolsaTIEEner,kWh,Energía comprada en la Bolsa de Energía para atender la demanda TIE
+VentBolsaIntEner,kWh,Energía vendida en la Bolsa de Energía para atender la demanda internacional.
+CompBolsaTIEEner,kWh,Energía comprada en la Bolsa de Energía para atender la demanda TIE
+CompBolsaIntEner,kWh,"Energía comprada en la Bolsa para atender la demanda internacional, es decir, las exportaciones a Venezuela. La interconexión con Venezuela se hace a través de las líneas Cuestecitas- Cuatricentenario"
+VentBolsaTIEEner,kWh,Energía comprada en la Bolsa de Energía para atender la demanda TIE
+VentBolsaIntEner,kWh,Energía vendida en la Bolsa de Energía para atender la demanda internacional.
+CompBolsaTIEMoneda,COP,Energía comprada en la Bolsa de Energía para atender la demanda TIE
+CompBolsaIntMoneda,COP,"Energía comprada en la Bolsa para atender la demanda internacional, es decir, las exportaciones a Venezuela. La interconexión con Venezuela se hace a través de las líneas Cuestecitas- Cuatricentenario"
+VentBolsaTIEMoneda,COP,Energía comprada en la Bolsa de Energía para atender la demanda TIE
+VentBolsaIntMoneda,COP,Energía vendida en la Bolsa de Energía para atender la demanda internacional.
+CompBolsaTIEMoneda,COP,Energía comprada en la Bolsa de Energía para atender la demanda TIE
+CompBolsaIntMoneda,COP,"Energía comprada en la Bolsa para atender la demanda internacional, es decir, las exportaciones a Venezuela. La interconexión con Venezuela se hace a través de las líneas Cuestecitas- Cuatricentenario"
+VentBolsaTIEMoneda,COP,Energía comprada en la Bolsa de Energía para atender la demanda TIE
+VentBolsaIntMoneda,COP,Energía vendida en la Bolsa de Energía para atender la demanda internacional.
+DemaCome,kWh,Considera la demanda propia de cada comercializador mas la paticipacion en la perdidas del STN y los consumos propios de los generadores.
+ImportMonedaCOP,COP,Transferencias de Energia desde otros paises para abastecer la demanda nacional
+ExportMonedaUSD,COP,Transferencias de Energia desde Colombia hacia otros paises
+ImportMonedaUSD,COP,Transferencias de Energia desde otros paises para abastecer la demanda nacional
+CompBolsaNacMoneda,COP,Energía comprada en la Bolsa de Energía para atender la demanda nacional
+CompContMoneda,COP,Energía comprada mediante Contratos de largo plazo
+VentaBolsNaciMoneda,COP,Energia comprada en la Bolsa de Energia para atender la demanda nacional
+VentBolsNaciEner,kWh,Energia comprada en la Bolsa de Energia para atender la demanda nacional
+VentBolsNaciEner,kWh,Energia comprada en la Bolsa de Energia para atender la demanda nacional
+CostMargDesp,COP/kWh,Es el aumento en el costo total operativo del Sistema debido al incremento de la demanda del mismo en una unidad. El costo adicional es imputable únicamente a unidades de generación flexbiles y con el
+DesvMoneda,COP,Es la cantidad de energía que se desvía una Central cuando incumple el programa de generación
+CostRecPos,COP/kWh,Reconcilación Positiva sin AGC ($) / Reconcilación Positiva sin AGC (kWh)
+CostRecPos,COP/kWh,Reconcilación Positiva sin AGC ($) / Reconcilación Positiva sin AGC (kWh)
+CostRecNeg,COP/kWh,Reconcilación Negativa sin AGC ($) / Reconcilación Negativa sin AGC (kWh)
+CostRecNeg,COP/kWh,Reconcilación Negativa sin AGC ($) / Reconcilación Negativa sin AGC (kWh)
+CompContEnerSICEP,kWh,Energía comprada mediante Contratos de largo plazo
+CompContEnerSICEP,kWh,Energía comprada mediante Contratos de largo plazo
+VentContEnerSICEP,kWh,Energia vendida mediante Contratos de largo plazo
+VentContEnerSICEP,kWh,Energia vendida mediante Contratos de largo plazo
+DemaRealReg,kWh,Demanda de usuarios regulados y no regulados que hacen parte del Sistema Interconectado Nacional (no incluye Alumbrado Público)
+DemaRealReg,kWh,Demanda de usuarios regulados y no regulados que hacen parte del Sistema Interconectado Nacional (no incluye Alumbrado Público)
+DemaRealNoReg,kWh,Demanda de usuarios regulados y no regulados que hacen parte del Sistema Interconectado Nacional (no incluye Alumbrado Público)
+DemaRealNoReg,kWh,Demanda de usuarios regulados y no regulados que hacen parte del Sistema Interconectado Nacional (no incluye Alumbrado Público)
+PerdidasEnerReg,kWh,"Cantidad de las inyecciones de energia al Sistema de Transmision Nacional (flujos de baja a alta tension), menos la cantidad de los flujos que salieron del Sistema (flujos de alta a baja tension)."
+PerdidasEnerReg,kWh,"Cantidad de las inyecciones de energia al Sistema de Transmision Nacional (flujos de baja a alta tension), menos la cantidad de los flujos que salieron del Sistema (flujos de alta a baja tension)."
+PerdidasEnerNoReg,kWh,"Cantidad de las inyecciones de energia al Sistema de Transmision Nacional (flujos de baja a alta tension), menos la cantidad de los flujos que salieron del Sistema (flujos de alta a baja tension)."
+PerdidasEnerNoReg,kWh,"Cantidad de las inyecciones de energia al Sistema de Transmision Nacional (flujos de baja a alta tension), menos la cantidad de los flujos que salieron del Sistema (flujos de alta a baja tension)."
+PerdidasEner,kWh,"Cantidad de las inyecciones de energia al Sistema de Transmision Nacional (flujos de baja a alta tension), menos la cantidad de los flujos que salieron del Sistema (flujos de alta a baja tension)."
+DeltaInt,COP/kWh,Incremento sobre el MPO (Máximo Precio Ofertado) Internacional horario para calcular el Precio de Bolsa Internacional (Venezuela). Resolución 051/2009
+DeltaNal,COP/kWh,Incremento sobre el MPO (Máximo Precio Ofertado) Nacional horario para calcular el Precio de Bolsa Nacional. Resolución 51/2009
+ENFICC,kWh,"Energía Firme para el Cargo por Confiabilidad : Es la máxima energía eléctrica que es capaz de entregar una planta de generación continuamente, en condiciones de baja hidrología, en un período de un a"
+ENFICC,kWh,"Energía Firme para el Cargo por Confiabilidad : Es la máxima energía eléctrica que es capaz de entregar una planta de generación continuamente, en condiciones de baja hidrología, en un período de un a"
+CompNetArranPara,COP,Compras netas del Recurso de Generación por concepto de Arranque y Parada con base en el Valor a Distribuir y el Valor a Recaudar por el mismo concepto. Resolución 051/2009
+AporEner,kWh,Caudales en energia de los rios que aportan agua a algun embalse del SIN
+PrecPromCont,COP/kWh,"Precio Promedio Ponderado de contratos largo plazo, de acuerdo a la cantidad de energía de cada contrato"
+RemuRealIndiv,COP,Remuneración Real Individual Diaria de la Obligación de Energía Firme de acuerdo con lo establecido en la Resolución CREG 071 de 2006.
+VoluUtilDiarEner,kWh,"Volumen almacenado por encima del Nivel Minimo Tecnico, reportado diariamente por los agentes. En % corresponde a la relacion entre el Volumen Util Diario y la Capacidad Util del Embalse"
+PrecEscaAct,COP/kWh,Precio de Escasez de Activación calculado de acuerdo con la Resolución CREG 140 del 2017
+PrecEsca,COP/kWh,"Establecido por la CREG- y actualizado mensualmente con base en la variación de un índice de precios de combustibles, tiene una doble función. Por una parte indica a partir de qué momento las Obligaci"
+PrecEscaMarg,COP/kWh,Precio Marginal de Escasez calculado de acuerdo con la Resolución CREG 140 del 2017
+CapEfecNeta,kW,Máxima cantidad de potencia neta que puede suministrar una unidad de generación en condiciones normales de operación. Incluye las menores y cogeneradores
+DemaSIN,kWh,"Demanda del SIN, la cual se calcula con base en la generacion neta de las plantas e incluye: hidraulicas, termicas, plantas menores, cogeneradores , demanda no atendida, limitacion del suministro e im"
+AporEnerMediHist,kWh,"Caudal medio mensual histórico en energia para los rios del SIN, obtenido como el promedio de los valores de cada mes para todos años con información disponibles "
+CapaUtilDiarEner,kWh,"Corresponde al Volumen Útil del Embalse, que se define como el volumen almacenado entre el nivel Mínimo Técnico y el Nivel Máximo Físico"
+FAZNI,COP,"Valor recaudado por concepto del Fondo de apoyo a zonas no interconectadas. Hace parte de los fondos para atender zonas especiales deprimidas y zonas no interconectadas, con recursos del mismo sector"
+ObligEnerFirme,kWh,La OEF es un producto diseñado para garantizar la confiabilidad en el suministro de energía en el largo plazo a precios eficientes. Prorrata de la Energía Firme declarada para cada una de las Plantas 
+DemaNoAtenProg,kWh,Es la demanda no atendida de energía del SIN por desconexiones forzadas o programadas
+DemaNoAtenNoProg,kWh,Es la demanda no atendida de energía del SIN por desconexiones forzadas o programadas
+DemaNoAtenProg,kWh,Es la demanda no atendida de energía del SIN por desconexiones forzadas o programadas
+DemaNoAtenNoProg,kWh,Es la demanda no atendida de energía del SIN por desconexiones forzadas o programadas
+VoluUtilDiarEner,kWh,"Volumen almacenado por encima del Nivel Minimo Tecnico, reportado diariamente por los agentes. En % corresponde a la relacion entre el Volumen Util Diario y la Capacidad Util del Embalse"
+CapaUtilDiarEner,kWh,"Corresponde al Volumen Útil del Embalse, que se define como el volumen almacenado entre el nivel Mínimo Técnico y el Nivel Máximo Físico"
+AporEner,kWh,Caudales en energia de los rios que aportan agua a algun embalse del SIN
+AporEnerMediHist,kWh,"Caudal medio mensual histórico en energia para los rios del SIN, obtenido como el promedio de los valores de cada mes para todos años con información disponibles "
+DDVContratada,kWh,Valor total diario contratado por cada recurso de generación bajo el esquema de Demanda Desconectable Voluntaria.
+DemaMaxPot,kWh,"Es la máxima demanda de potencia, expresada en MW, requerida por el SIN en un instante de tiempo. Conocida también como demanda pico."
+ComContRespEner,COP,Energia comprada en la Bolsa de Energia a aquellos generadores que brindan estabilidad al Sistema
+PrecCargConf,USD/kWh, Precio del Cargo por confiabilidad al que se remunera la Obligación de Energía Firme
+VentContRespEner,COP,Ventas de contratos Respaldo
+ComContRespEner,COP,Energia comprada en la Bolsa de Energia a aquellos generadores que brindan estabilidad al Sistema
+VentContRespEner,COP,Ventas de contratos Respaldo
+VoluUtilDiarMasa,m3,"Definida como el volumen almacenado en el embalse por encima del Nivel Mínimo Técnico, inició su declaración diaria por parte de los agentes hidráulicos del mercado desde julio 11 de 2004 (Acuerdo 294"
+VertMasa,m3,Los vertimientos estan relacionados con la cantidad de agua que debe ser evacuada en los embalses cuando la reserva sobrepasa la capacidad maxima de almacenamiento.
+AporCaudal,m3/s,"Valores de la hidrologia de los caudales de los rios del SIN, en metros cubicos por segundo"
+AporCaudalMediHist,m3/s,"Caudal medio mensual histórico para los rios del SIN, obtenido como el promedio de los valores de cada mes para todos años con información disponibles"
+DescMasa,Miles m3,"Agua descargada del embalse por compuertas de fondo o cualquier otro sistema, expresado en miles m3."
+VertEner,kWh,Los vertimientos estan relacionados con la cantidad de agua que debe ser evacuada en los embalses cuando la reserva sobrepasa la capacidad maxima de almacenamiento.
+VertEner,kWh,Los vertimientos estan relacionados con la cantidad de agua que debe ser evacuada en los embalses cuando la reserva sobrepasa la capacidad maxima de almacenamiento.
+CapaUtilDiarMasa,m3,"Corresponde al Volumen Útil del Embalse, que se define como el volumen almacenado entre el nivel Mínimo Técnico y el Nivel Máximo Físico"
+CapaUtilDiarMasa,m3,"Corresponde al Volumen Útil del Embalse, que se define como el volumen almacenado entre el nivel Mínimo Técnico y el Nivel Máximo Físico"
+VolTurbMasa,Miles m3,"Agua turbinada por la planta expresada en miles m3, incluye caudal ambiental y caudal de acueducto"
+VolTurbMasa,Miles m3,"Agua turbinada por la planta expresada en miles m3, incluye caudal ambiental y caudal de acueducto"
+PrecOferIdeal,COP/kWh,Es el precio de la energia de una recurso de generación para cada una de las 24 horas de un dia. Difiere del precio de oferta de despacho en que incluye el CERE en lugar del CEE
+PorcVoluUtilDiar,%,Porcentaje de volumen almacenado en el embalse por encima del Nivel Mínimo Técnico
+PorcVoluUtilDiar,%,Porcentaje de volumen almacenado en el embalse por encima del Nivel Mínimo Técnico
+PorcApor,%,[Aportes Caudal / Media Histórica]*100
+PorcApor,%,[Aportes Caudal / Media Histórica]*100
+PPPrecBolsNaci,COP/kWh,El Precio de Bolsa ponderado  se calcula como un ponderado de las ventas  en bolsa Nacional en el periodo (Valor/Magnitud) a partir de la versión tx2. Para la versión tx1 se pondera con la generación.
+PrecEscaPon,COP/kWh,Precio Escasez Ponderado del Sistema calculado de acuerdo a la Resolución CREG 140 de 2017
+IrrPanel,W/m2,Irradiación solar en la superficie de los paneles representativa de  la planta solar fotovoltaica.
+IrrGlobal,W/m2,Irradiación solar en superficie horizontal representativa de la planta solar fotovoltaica.
+TempPanel,,
+TempAmbSolar,°C,Temperatura del aire representativa de la planta solar fotovoltaica.
+FAER,COP,Fondo de Apoyo Financiero para la Energización de las Zonas Rurales Interconectadas -FAER-
+PRONE,COP,"Hace parte de los fondos especiales para atender zonas especiales deprimidas y zonas no interconectadas, con recursos del mismo sector eléctrico (FAZNI, FAER, FOES, PRONE)."
+MC,COP/kWh,"Costo Promedio ponderado por energía, expresado en COP/kWh, de todos los contratos bilaterales liquidados en el Mercado de Energía Mayorista con destino al mercado regulado. Mediante la Resolución CRE"
+CERE,COP/kWh,"Costo Equivalente Real de Energia del Cargo por Capacidad se usa para efectos de cotización en la Bolsa de Energía, es una señal de referencia para los agentes generadores del mercado. El propósito de"
+CEE,COP/kWh,"Costo Equivalente de Energia del Cargo por Capacidad se usa para efectos de cotización en la Bolsa de Energía, es una señal de referencia para los agentes generadores del mercado. El propósito de la s"
+CargoUsoSTN,COP,Valor que recibe el agente transmisor por uso del sistema de transmisión nacional.
+CargoUsoSTR,COP,Distribución de los cargos por uso del sistema de transmisión regional de los operadores de red
+CargMaxTPrima,COP/kWh,Termino usado enla metodología para el cálculo y aplicación de los Cargos por Uso del Sistema de Transmisión Nacional (STN)
+CargMinTPrima,COP/kWh,Termino usado enla metodología para el cálculo y aplicación de los Cargos por Uso del Sistema de Transmisión Nacional (STN)
+CargMedTPrima,COP/kWh,Termino usado enla metodología para el cálculo y aplicación de los Cargos por Uso del Sistema de Transmisión Nacional (STN)
+EscDemUPMEAlto,kWh,proyecciones de demanda de energía realizada por la UPME 
+EscDemUPMEMedio,kWh,proyecciones de demanda de energía realizada por la UPME
+EscDemUPMEBajo,kWh,Generación neta de cada una de las plantas en sus puntos de frontera. Incluye las importaciones Internacionales
+PrecFAZNI,COP/kWh,FAZNI - Fondo de apoyo a zonas no interconectadas
+ListadoRecursos,,Listado de recursos y unidades que pertenecen a un agente generador
+ListadoRecursos,,Listado de recursos con sus atributos y que se encuentran en operación comercial  y pruebas conectados al Sistema Interconectado Nacional SIN
+ListadoAgentes,,Listado de Agentes registrados ante el ASIC con la actividad que desarrollan en el mercado
+ListadoRios,,Listado de ríos que se encuentran registrados ante el CND y que cuentan con punto de medida
+ListadoEmbalses,,Listado de embalses que se encuentran registrados ante el CND y que son reportados por algún recurso del SIN
+ListadoMetricas,,Listado de métricas disponibles en la API XM con los respectivos atributos de consulta
+ListadoAGPE,kW,Listado de Autogeneradores a Pequeña Escala AGPE con reporte y sin reporte al ASIC.
