@@ -18,29 +18,58 @@ def table(model_outputs_path, model_inputs_path):
                                     values='BuildGen',aggfunc='sum').fillna(0)
     pivot_table.loc['Total'] = pivot_table.sum()
 
-    return 
+    return pivot_table
 
 import plotly.express as px
-def dispatched_generation(scenario_outputs_path, file):
-    gen_disp = pd.read_csv(scenario_outputs_path+file)
-    gen_disp = gen_disp.drop(gen_disp.columns[0], axis=1)
-    gen_disp['year'] = gen_disp['timestamp'].str[:4]
-
-    gen_disp = gen_disp.groupby(['year','gen_tech']).agg({
-        'Energy_GWh_typical_yr' : 'sum'}).reset_index()
-    gen_disp['Energy_GWh_typical_yr'] = gen_disp['Energy_GWh_typical_yr'] / 1000
-    # Convert gen_tech to a categorical type with the specified order
-    gen_disp['gen_tech'] = pd.Categorical(gen_disp['gen_tech'], categories=[
-        'Menores','Thermal', 'Hidro','Eolica','pv_solar'], ordered=True)
-    gen_disp = gen_disp.sort_values(['year', 'gen_tech'])
-    gen_disp.rename(columns={'gen_tech': 'Tech'}, inplace=True)
-
-    # Create a stacked bar plot
+def dispatched_generation(dataframe, x_axis, y_axis, color):
+    dataframe = dataframe.groupby([x_axis, color]).agg({
+        y_axis : 'sum'}).reset_index()
+    dataframe = dataframe.sort_values(by=y_axis, ascending=False)
     fig = px.bar(
-        gen_disp, x='year', y='Energy_GWh_typical_yr',
-        color='Tech', title='Generation Dispatch Over Time by Technology',
-        labels={'Energy_GWh_typical_yr': 'Dispatched Generation (MW)', 'year': 'Year'})
+        dataframe, x=x_axis, y=y_axis,
+        color=color, title='Generation Dispatch Over Time by Technology',
+        labels={y_axis: 'Dispatched Generation (MW)', x_axis: 'Year'})
+
+    unique_years = dataframe[x_axis].unique()
     # Update layout for better readability if needed
-    fig.update_layout(barmode='stack', xaxis_title="Timestamp", xaxis={'tickangle': -45},
-                    yaxis_title="Dispatched Generation (TWh)")
+    fig.update_layout(barmode='stack', xaxis_title="Timestamp", xaxis=dict(
+        tickvals=unique_years,
+        tickangle=-45,
+        tickfont=dict(size=10),  # Adjust the font size for better fit
+        showgrid=True  # Show grid to help align the labels visually
+        ),
+        yaxis_title="Dispatched Generation (TWh)")
+    fig.show()
+
+def annual_emmissions(dataframe, x_axis, y_axis):
+    fig = px.bar(
+        dataframe, x=x_axis, y=y_axis,
+        labels={y_axis: 'Annual Emissions (MtCO2)', x_axis: 'Year'},
+        text=y_axis)
+    # Mejorar la visualización
+    fig.update_traces(texttemplate='%{text:.2f}', textposition='outside')
+    fig.update_layout(xaxis=dict(tickvals=dataframe[x_axis].to_list()))
+    fig.show()
+
+from plotly.subplots import make_subplots
+def installed_capacity(esc0, escf):
+    # Create individual figures
+    fig1 = px.pie(esc0, names='gen_tech', values='BuildGen', title='Generation Reported (XM)')
+    fig2 = px.pie(escf, names='gen_tech', values='BuildGen', title='Generation Predicted (Switch)')
+
+    # Create subplots with the 'type' argument set to 'domain' to accommodate pie charts
+    fig = make_subplots(rows=1, cols=2, specs=[[{'type':'domain'}, {'type':'domain'}]], 
+                        subplot_titles=("2023", "2037"))
+
+    # Add figures to the subplots
+    for trace in fig1.data: fig.add_trace(trace, row=1, col=1)
+    for trace in fig2.data: fig.add_trace(trace, row=1, col=2)
+
+    # Ensure legend items show only once
+    names = set()
+    for trace in fig.data:
+        if (trace.name in names): trace.showlegend = False
+        else: names.add(trace.name)
+
+    # Show the figure
     fig.show()
