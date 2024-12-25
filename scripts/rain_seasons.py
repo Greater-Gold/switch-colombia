@@ -20,3 +20,11 @@ def extract_hour(hour_string):
         return f"00:00:00"
     else:
         return f"{hour}:00:00"
+
+import pandas as pd
+def format_hours(df):
+    df['Date'] = pd.to_datetime(df['Date'])
+    df['timestamp'] = df['Date'].apply(\
+    lambda x: f"{year(x.year,x.strftime('%B'))}_{quarter(x.strftime('%B'))}_{day(x.day_name())}_{x.hour}h")
+
+    return df

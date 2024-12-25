@@ -1,5 +1,5 @@
 import pandas as pd
-
+# Generation by Resource
 def add_tech(dema_path):
     generation = pd.read_csv(dema_path+'Gene_Recurso.csv')
     generation = generation.drop(generation.columns[:2], axis=1) # Remove the ID column
@@ -20,13 +20,10 @@ def melt_into_dates(generation):
     generation = pd.melt(generation, id_vars=['Date','Values_Type'], var_name='Hora', value_name='GeneReal')
     # Convert Values into MW
     generation['GeneReal'] = generation['GeneReal'] / 1000
-    # Aplica la función a la columna Hora
     generation['Hora'] = generation['Hora'].apply(rs.extract_hour)
-    # Convierte la columna Date a string
     generation['Date'] = generation['Date'].astype(str)
-    # Combina las columnas Date y Hora
     generation['Date'] = generation['Date'] + ' ' + generation['Hora']
-    # Elimina la columna Hora ya que no la necesitamos más
+    # Delete column "Hora"
     generation = generation.drop(columns=['Hora'])
 
     print("Shape Gene_Recurso (Melted):",generation.shape)
@@ -63,3 +60,5 @@ def plot_multiple_line(generation, sort, x, y, color, title, labels):
         labels=labels
     )
     fig.show()
+
+# Generation by System
