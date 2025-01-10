@@ -1,1 +1,1 @@
-# switch-colombia
+switch
